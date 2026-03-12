@@ -1,12 +1,12 @@
 from typing import List, Optional, Dict, Any
 from openai import OpenAI
-from lib.messages import (
+from .messages import (
     AnyMessage,
     AIMessage,
     BaseMessage,
     UserMessage,
 )
-from lib.tooling import Tool
+from .tooling import Tool
 import os
 
 
