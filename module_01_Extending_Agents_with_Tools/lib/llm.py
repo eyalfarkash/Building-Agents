@@ -23,7 +23,7 @@ class LLM:
         
         self.client = OpenAI (
             api_key=api_key or os.getenv("OPENAI_API_KEY"),
-            base_url=os.getenv("OPENAI_BASE_URL")  
+            base_url=os.getenv("OPENAI_BASE_URL")
         )  # pyright: ignore[reportInvalidTypeForm]
         
         # self.client = OpenAI(api_key=api_key) if api_key else OpenAI()
